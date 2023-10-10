@@ -6,23 +6,23 @@ import base64
 st.set_page_config(layout="wide")
 
 def download_template():
-    # Template file URL
-    template_url = 'https://github.com/DatalabHvA/ZET-kompas/blob/main/input/wagenpark.xlsx'
+	# Template file URL
+	template_url = 'https://github.com/DatalabHvA/ZET-kompas/blob/main/input/wagenpark.xlsx'
 
-    # Request the template file
-    response = requests.get(template_url)
+	# Request the template file
+	response = requests.get(template_url)
 
-    # Create a BytesIO object
-    template_data = BytesIO(response.content)
+	# Create a BytesIO object
+	template_data = BytesIO(response.content)
 
-    # Offer the file download
-    st.download_button('Download Template', template_data, file_name='wagenpark.xlsx')
+	# Offer the file download
+	st.download_button('Download Template', template_data, file_name='wagenpark.xlsx')
 
 # Streamlit app
 st.title("ZET-kompas interface")
 
 # Download template button
-    download_template()
+download_template()
 	
 # File upload
 excel_file = st.file_uploader("Upload Excel file", type=["xlsx"])
