@@ -6,6 +6,7 @@ from io import BytesIO
 
 st.set_page_config(layout="wide")
 
+
 def download_template():
 	# Template file URL
 	template_url = 'https://github.com/DatalabHvA/ZET-kompas/blob/main/input/wagenpark.xlsx'
