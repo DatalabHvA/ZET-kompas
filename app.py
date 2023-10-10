@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 import base64
+from io import BytesIO
 
 st.set_page_config(layout="wide")
 
