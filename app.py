@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 
 def download_template():
 	# Template file URL
-	template_url = 'https://github.com/DatalabHvA/ZET-kompas/blob/main/input/wagenpark.xlsx'
+	template_url = 'https://github.com/DatalabHvA/ZET-kompas/raw/main/input/wagenpark.xlsx'
 
 	# Request the template file
 	response = requests.get(template_url)
