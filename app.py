@@ -55,7 +55,7 @@ if excel_file is not None:
 		if response.status_code == 200:
 			# Display the HTML code returned by the API
 			html_code = response.text
-			st.components.v1.html(html_code, height = 600, scrolling=True)
+			st.components.v1.html(html_code, height = 1000, scrolling=True)
 		else:
 			st.error("API request failed.")
 	except Exception as e:
